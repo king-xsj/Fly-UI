@@ -7,7 +7,7 @@ import fly_backtop from './fly_backtop'
 import fly_demo_block from './fly_demo_block'
 import fly_table_simple from './fly_table_simple'
 import fly_card from './fly_card'
-import fly_input from './fly_input'
+// import fly_input from './fly_input'
 
 // 存储组件列表
 const components = [
@@ -18,7 +18,7 @@ const components = [
   fly_demo_block,
   fly_table_simple,
  
-  fly_input,
+  // fly_input,
 
   fly_card
 ]
@@ -39,14 +39,13 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
   // 导出的对象必须具有 install，才能被 Vue.use() 方法安装
   install,
-  // 以下是具体的组件列表
+  // 以下是具体的组件列表  
   fly_btn,
   fly_backtop,
   fly_anchor_link,
   fly_demo_block,
   fly_table_simple,
 
-  fly_input,
- 
+  // fly_input,
   fly_card
 }
