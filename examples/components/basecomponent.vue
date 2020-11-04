@@ -3,12 +3,12 @@
     <h2 class="demo-title">基础组件</h2>
     <p class="demo-introduction">这里是一些基础组件的展示</p>
 
-    <orange-anchor>
+    <!-- <orange-anchor>
       <orange-anchor-link href="card" title="card阴影" />
       <orange-anchor-link href="anchor" title="Rocket按钮" />
       <orange-anchor-link href="input" title="输入框" />
       <orange-anchor-link href="api" title="API" />
-    </orange-anchor>
+    </orange-anchor> -->
 
     <!-- <h3 class="demo-table-title" id="button-simple">基础用法</h3> -->
     <!-- 基础用法DEMO -->

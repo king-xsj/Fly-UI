@@ -3,14 +3,14 @@
     <h2 class="demo-title">Button 按钮</h2>
     <p class="demo-introduction">常用按钮介绍</p>
 
-    <orange-anchor>
+    <!-- <orange-anchor>
       <orange-anchor-link href="button-Simple" title="普通按钮" />
       <orange-anchor-link href="button-Black" title="暗色按钮" />
       <orange-anchor-link href="button-Line" title="线性按钮" />
       <orange-anchor-link href="button-disabled" title="禁用" />
       <orange-anchor-link href="button-Size" title="按钮尺寸" />
       <orange-anchor-link href="api" title="API" />
-    </orange-anchor>
+    </orange-anchor> -->
 
     <h3 class="demo-table-title" id="button-simple">基础用法</h3>
     <!-- 基础用法DEMO -->

@@ -9,14 +9,14 @@ import 'highlight.js/styles/atom-one-dark.css'
 import '../util';
 
 
-import OrangeUI from '../packages/index'
+import FlyUI from '../packages/index'
 
 import router from './router'
 
 Vue.config.productionTip = false
 Vue.use(VueHighlightJS) 
 
-Vue.use(OrangeUI)
+Vue.use(FlyUI)
 
 new Vue({
   router,

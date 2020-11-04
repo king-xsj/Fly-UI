@@ -7,6 +7,7 @@ import fly_backtop from './fly_backtop'
 import fly_demo_block from './fly_demo_block'
 import fly_table_simple from './fly_table_simple'
 import fly_card from './fly_card'
+import fly_show_block from './fly_show_block'
 // import fly_input from './fly_input'
 
 // 存储组件列表
@@ -17,7 +18,7 @@ const components = [
   fly_backtop,
   fly_demo_block,
   fly_table_simple,
- 
+  fly_show_block,
   // fly_input,
 
   fly_card
@@ -45,7 +46,7 @@ export default {
   fly_anchor_link,
   fly_demo_block,
   fly_table_simple,
-
+  fly_show_block,
   // fly_input,
   fly_card
 }

@@ -13,7 +13,7 @@
     <div class="demo-tip">
       <p>
         该项目DEMO页面模仿
-        <span style="color:#ff0000;margin:0 5px;">Element-ui</span>页面开发,旨在收集有意思的相关组件
+        <span style="color:#ff0000;margin:0 5px;">Element-ui</span>页面开发
       </p>
       <p>
         <a
@@ -22,7 +22,7 @@
         >https://element.eleme.io/#/zh-CN/component/installation</a>
       </p>
     </div>
-    <div class="demo-tip demo-success-tip">该项目配色由阿金提供</div>
+    <!-- <div class="demo-tip demo-success-tip">该项目配色由阿金提供</div> -->
 
     <!-- NPM安装 -->
     <h3 class="demo-table-title">NPM安装</h3>

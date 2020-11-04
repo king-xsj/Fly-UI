@@ -3,13 +3,13 @@
     <h2 class="demo-title">收集按钮</h2>
     <p class="demo-introduction">这里是不常用的按钮，只是觉得有意思做一些收集</p>
 
-    <orange-anchor>
+    <!-- <orange-anchor>
       <orange-anchor-link href="button-Run" title="Run按钮" />
       <orange-anchor-link href="button-Rocket" title="Rocket按钮" />
       <orange-anchor-link href="button-Reflect" title="Reflect按钮" />
       <orange-anchor-link href="button-overlap" title="Overlap按钮" />
       <orange-anchor-link href="api" title="API" />
-    </orange-anchor>
+    </orange-anchor> -->
 
     <!-- <h3 class="demo-table-title" id="button-simple">基础用法</h3> -->
     <!-- 基础用法DEMO -->
