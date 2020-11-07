@@ -4,7 +4,7 @@ import fly_btn from './fly_btn'
 import fly_anchor from './fly_anchor'
 import fly_anchor_link from './fly_anchor_link'
 import fly_backtop from './fly_backtop'
-import fly_demo_block from './fly_demo_block'
+
 import fly_table_simple from './fly_table_simple'
 import fly_card from './fly_card'
 import fly_show_block from './fly_show_block'
@@ -16,7 +16,7 @@ const components = [
   fly_anchor,
   fly_anchor_link,
   fly_backtop,
-  fly_demo_block,
+
   fly_table_simple,
   fly_show_block,
   // fly_input,
@@ -44,7 +44,6 @@ export default {
   fly_btn,
   fly_backtop,
   fly_anchor_link,
-  fly_demo_block,
   fly_table_simple,
   fly_show_block,
   // fly_input,

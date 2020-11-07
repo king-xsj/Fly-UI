@@ -27,51 +27,15 @@
         :title="'使用方法'"
       >
         <template v-slot:showPart>
-          <i class="iconfont org-icon-guge" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-huohu" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-if_edge_" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-steam" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-vue" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-react" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-angular" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-jq" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-node1" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-huaban88" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-dota" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-zhihu" style="margin: 0 20px;"></i>
+          <i class="iconfont fly-arrow-top" style="margin: 0 20px;"></i>
+          <i class="iconfont fly-arrow-right" style="margin: 0 20px;"></i>
+          <i class="iconfont fly-arrow-bottom" style="margin: 0 20px;"></i>
+          <i class="iconfont fly-back" style="margin: 0 20px;"></i>
         </template>
         <template v-slot:code>
           <code class="html">{{fCode(simple.code.html)}}</code>
         </template>
       </fly-show-block>
-
-
-      <!-- 使用方法DEMO -->
-      <!-- <orange-demo-block
-        :height="294"
-        :introduction="'直接通过设置类名为 iconfont，org-icon- 来使用即可。例如：'"
-        :title="'使用方法'"
-       
-      >
-        <template v-slot:demo>
-          <i class="iconfont org-icon-guge" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-huohu" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-if_edge_" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-steam" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-vue" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-react" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-angular" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-jq" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-node1" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-huaban88" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-dota" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-zhihu" style="margin: 0 20px;"></i>
-        </template>
-        <template v-slot:code>
-          <code class="html">{{fCode(simple.code.html)}}</code>
-        </template>
-      </orange-demo-block> -->
-
       <!-- 常用图标 -->
       <div id="orange-ofen-list">
         <h3 class="demo-table-title">常用图标</h3>
@@ -100,48 +64,18 @@ export default {
       simple: {
         code: {
           html: 
-         `<i class="iconfont org-icon-guge" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-huohu" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-if_edge_" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-steam" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-vue" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-react" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-angular" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-jq" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-node1" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-huaban88" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-dota" style="margin: 0 20px;"></i>
-          <i class="iconfont org-icon-zhihu" style="margin: 0 20px;"></i>`
+         `<i class="iconfont fly-arrow-top" style="margin: 0 20px;"></i>
+          <i class="iconfont fly-arrow-right" style="margin: 0 20px;"></i>
+          <i class="iconfont fly-arrow-bottom" style="margin: 0 20px;"></i>
+          <i class="iconfont fly-back" style="margin: 0 20px;"></i>
+         `
         }
       },
       ofen_icon_list: [
-        "org-icon-js",
-        "org-icon-arrow-up",
-        "org-icon-leftarrow",
-        "org-icon-Rightarrow",
-        "org-icon-arrow-down",
-        "org-icon-kehuishouwu-niunaihe",
-        "org-icon-svgmoban14",
-        "org-icon-node",
-        "org-icon-icon_add",
-        "org-icon-icon_addmessage",
-        "org-icon-icon_addresslist",
-        "org-icon-icon_addperson",
-        "org-icon-icon_boss",
-        "org-icon-icon_alipay_line",
-        "org-icon-icon_at",
-        "org-icon-icon_exchange",
-        "org-icon-icon_dingtalk_line",
-        "org-icon-icon_qq",
-        "org-icon-icon_medal",
-        "org-icon-icon_QRcode",
-        "org-icon-icon_refresh",
-        "org-icon-icon_search",
-        "org-icon-icon_sketch",
-        "org-icon-icon_wechat",
-        "org-icon-icon_shield"
-        // "org-icon-icon_task_done",
-        // "org-icon-caishichang-",
+        "fly-arrow-top",
+        "fly-arrow-right",
+        "fly-arrow-bottom",
+        "fly-back"
       ]
     };
   }

@@ -276,12 +276,11 @@ export default {
     height: 80px;
     line-height: 80px;
     background: #fff;
+    border-bottom: 1px solid #dcdfe6;
     .container {
       height: 100%;
       width: 1140px;
       margin: 0 auto;
-      padding: 0 10px;
-      border-bottom: 1px solid #dcdfe6;
       .title {
         // color: $--color-primary;
         color: #409eff;
@@ -367,7 +366,7 @@ export default {
     .content {
       flex: 1;
       width: 100%;
-      padding: 0 50px 0 10px;
+      padding: 0 0px 0 10px;
       margin-left: 240px;
     }
   }

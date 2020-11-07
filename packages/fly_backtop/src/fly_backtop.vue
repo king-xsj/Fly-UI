@@ -1,11 +1,15 @@
 <template>
-  <div :style="{opacity:show ? '1' : '0'}" @click="backTop" class="fly_backtop">
+  <div
+    :style="{ opacity: show ? '1' : '0' }"
+    @click="backTop"
+    class="fly_backtop"
+  >
     <div class="fly_backtop-customize-content">
       <slot></slot>
     </div>
     <div class="fly_backtop-content" v-if="!slotShow">
       <div>
-        <i class="iconfont org-icon-arrow-up"></i>
+        <i class="iconfont fly-arrow-top"></i>
       </div>
     </div>
   </div>
@@ -16,17 +20,17 @@ export default {
   props: {
     target: {
       type: String,
-      default: "window"
+      default: "window",
     },
     visibilityHeight: {
       type: Number,
-      default: 500
-    }
+      default: 500,
+    },
   },
   computed: {
     slotShow() {
       return this.$slots.default;
-    }
+    },
   },
   data() {
     return {
@@ -34,7 +38,7 @@ export default {
       scrollTop: 0,
 
       down: false,
-      timerIn: false
+      timerIn: false,
     };
   },
   mounted() {
@@ -109,8 +113,8 @@ export default {
           _this.timerIn = false;
         }
       }, 16);
-    }
-  }
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>

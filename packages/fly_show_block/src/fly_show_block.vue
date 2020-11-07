@@ -22,8 +22,8 @@
           class="iconfont"
           :class="{
             hovering_i: hover_animation,
-            'org-icon-arrow-down': code_height === 0,
-            'org-icon-arrow-up': code_height !== 0,
+            'fly-arrow-bottom': code_height === 0,
+            'fly-arrow-top': code_height !== 0,
           }"
         ></i>
         <span :class="{ hovering_span: hover_animation }">
