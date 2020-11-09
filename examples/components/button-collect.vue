@@ -13,7 +13,7 @@
 
     <!-- <h3 class="demo-table-title" id="button-simple">基础用法</h3> -->
     <!-- 基础用法DEMO -->
-    <orange-demo-block :height="100" :title="'Run按钮'" id="button-Run" introduction="点击切换奔跑🏃动作">
+    <fly-show-block :height="100" :title="'Run按钮'" id="button-Run" introduction="点击切换奔跑🏃动作">
       <template v-slot:demo>
         <div class="codepadding">
           <orange-run-button :active="Runactive" @click="runtest()" />
@@ -29,8 +29,8 @@
       <template v-slot:code>
         <code class="html">{{fCode(run.code.html)}}</code>
       </template>
-    </orange-demo-block>
-    <orange-demo-block
+    </fly-show-block>
+    <fly-show-block
       :height="100"
       :title="'Rocket按钮'"
       id="button-Rocket"
@@ -45,9 +45,9 @@
       <template v-slot:code>
         <code class="html">{{fCode(rocket.code.html)}}</code>
       </template>
-    </orange-demo-block>
+    </fly-show-block>
     <!-- 线性按钮 -->
-    <orange-demo-block
+    <fly-show-block
       :height="80"
       :title="'Reflect按钮'"
       id="button-Reflect"
@@ -59,9 +59,9 @@
       <template v-slot:code>
         <code class="html">{{fCode(reflect.code.html)}}</code>
       </template>
-    </orange-demo-block>
+    </fly-show-block>
     <!-- 禁用DEMO -->
-    <orange-demo-block
+    <fly-show-block
       :height="80"
       :title="'Overlap按钮'"
       id="button-overlap"
@@ -74,10 +74,10 @@
       <template v-slot:code>
         <code class="html">{{fCode(overlap.code.html)}}</code>
       </template>
-    </orange-demo-block>
+    </fly-show-block>
 
     <!-- 按钮尺寸 -->
-    <!-- <orange-demo-block
+    <!-- <fly-show-block
       :height="250"
       :title="'按钮尺寸'"
       id="button-Size"
@@ -104,7 +104,7 @@
       <template v-slot:code>
         <code class="html">{{fCode(size.code.html)}}</code>
       </template>
-    </orange-demo-block>-->
+    </fly-show-block>-->
 
     <!-- API -->
     <div id="api">

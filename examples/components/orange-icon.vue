@@ -22,7 +22,7 @@
 
     <div class="orange-orange" id="orange-simple">
       <!-- 使用方法DEMO -->
-      <orange-demo-block
+      <fly-show-block
         :height="294"
         :introduction="'直接通过设置类名为 iconfont，org-icon- 来使用即可。例如：'"
         :title="'使用方法'"
@@ -44,7 +44,7 @@
         <template v-slot:code>
           <code class="html">{{fCode(simple.code.html)}}</code>
         </template>
-      </orange-demo-block>
+      </fly-show-block>
 
       <!-- 常用图标 -->
       <div id="orange-ofen-list">

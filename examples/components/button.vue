@@ -14,7 +14,7 @@
 
     <h3 class="demo-table-title" id="button-simple">基础用法</h3>
     <!-- 基础用法DEMO -->
-    <orange-demo-block :height="630" :title="'普通按钮'" id="button-Simple">
+    <fly-show-block :height="630" :title="'普通按钮'" id="button-Simple">
       <template v-slot:demo>
         <div class="codepadding">
           <orange-button>Default</orange-button>
@@ -83,8 +83,8 @@
       <template v-slot:code>
         <code class="html">{{ fCode(simple.code.html) }}</code>
       </template>
-    </orange-demo-block>
-    <orange-demo-block :height="150" :title="'暗色按钮'" id="button-Black">
+    </fly-show-block>
+    <fly-show-block :height="150" :title="'暗色按钮'" id="button-Black">
       <template v-slot:demo>
         <div class="codepadding" style="background: #000">
           <orange-button isblack>Default</orange-button>
@@ -94,9 +94,9 @@
       <template v-slot:code>
         <code class="html">{{ fCode(black.code.html) }}</code>
       </template>
-    </orange-demo-block>
+    </fly-show-block>
     <!-- 线性按钮 -->
-    <orange-demo-block :height="168" :title="'线性按钮'" id="button-Line">
+    <fly-show-block :height="168" :title="'线性按钮'" id="button-Line">
       <template v-slot:demo>
         <orange-line-button disabled>Default</orange-line-button>
         <orange-line-button disabled type="success">Success</orange-line-button>
@@ -107,9 +107,9 @@
       <template v-slot:code>
         <code class="html">{{ fCode(line.code.html) }}</code>
       </template>
-    </orange-demo-block>
+    </fly-show-block>
     <!-- 禁用DEMO -->
-    <orange-demo-block :height="168" :title="'禁用'" id="button-disabled">
+    <fly-show-block :height="168" :title="'禁用'" id="button-disabled">
       <template v-slot:demo>
         <orange-button disabled>Default</orange-button>
         <orange-button disabled type="success">Success</orange-button>
@@ -122,10 +122,10 @@
       <template v-slot:code>
         <code class="html">{{ fCode(disabled.code.html) }}</code>
       </template>
-    </orange-demo-block>
+    </fly-show-block>
 
     <!-- 按钮尺寸 -->
-    <orange-demo-block
+    <fly-show-block
       :height="250"
       :title="'按钮尺寸'"
       id="button-Size"
@@ -152,7 +152,7 @@
       <template v-slot:code>
         <code class="html">{{ fCode(size.code.html) }}</code>
       </template>
-    </orange-demo-block>
+    </fly-show-block>
     <fly-backtop :visibilityHeight="300" />
     <!-- API -->
     <div id="api">

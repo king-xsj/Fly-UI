@@ -35,7 +35,7 @@
 </template>
 <script>
 export default {
-  name: "orange-demo-block",
+  name: "fly-show-block",
   props: {
     title: {
       type: String,
