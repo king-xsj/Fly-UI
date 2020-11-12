@@ -21,10 +21,10 @@ export default {
       this.loading.close()
     },
     showLoading(){
-      var that = this;
+      // var that = this;
       this.loading = this.$loading()
       setTimeout(()=>{
-        that.loading.close()
+        // that.loading.close()
       },3000)
     }
   },

@@ -8,7 +8,7 @@ LoadingConstructor.prototype.close = function(){
   this.isShow = false;
 }
 const defaults = {
-  text:'加载中',
+  text:'加载中...',
   isShow:false
 }
 const Loading = function(options={}){

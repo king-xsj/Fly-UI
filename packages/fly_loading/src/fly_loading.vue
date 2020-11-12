@@ -79,7 +79,7 @@ export default {
             font-size: 16px;
             color: #dddddd;
             bottom: 0px;
-            padding-left: 30px;
+            // padding-left: 30px;
         }
     }
     .loading i{ display:block; width:15px;height:15px;border-radius:50%; background-color:#dddddd; position:absolute;}
