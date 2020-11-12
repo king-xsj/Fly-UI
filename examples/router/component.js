@@ -1,27 +1,27 @@
-import Installation from '../components/installation'
-import FlyIcon from '../components/fly-icon.vue'
-import ButtonDemo from '../components/button.vue'
-import BaseComponent from '../components/basecomponent.vue'
-
+import Installation from '../views/installation'
+import FlyIcon from '../views/fly-icon.vue'
+import ButtonDemo from '../views/button.vue'
+import BaseComponent from '../views/basecomponent.vue'
+import Loading from '../views/notice/loading.vue'
 export default [{
-    path: '/component/installation',
+    path: '/views/installation',
     name: 'Installation',
     component: Installation,
     meta: {
-      title: '组件|Fly-UI'
+      title: '组件|Fly-Installation'
     }
   },
   {
-    path: '/component/icon',
+    path: '/views/icon',
     name: 'FlyIcon',
     component: FlyIcon,
     meta: {
-      title: '组件|Fly-UI'
+      title: '组件|Fly-icon'
     }
   },
 
   {
-    path: '/component/button',
+    path: '/views/button',
     name: 'ButtonDemo',
     component: ButtonDemo,
     meta: {
@@ -29,12 +29,27 @@ export default [{
     }
   },
   {
-    path: '/component/basecomponent',
+    path: '/views/basecomponent',
     name: 'BaseComponent',
     component: BaseComponent,
     meta: {
       title: '组件|Fly-UI'
     }
   },
-
+  {
+    path: '/views/notice/loading',
+    name: 'Loading',
+    component: Loading,
+    meta: {
+      title: '组件|Fly-Loading'
+    }
+  },
+  {
+    path: '/views/others/backtop',
+    name: 'backtop',
+    component: Backtop,
+    meta: {
+      title: '组件|Fly-Backtop'
+    }
+  },
 ]

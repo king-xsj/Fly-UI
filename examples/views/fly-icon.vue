@@ -1,6 +1,6 @@
 <template>
   <div class="content-box">
-    <h2 class="demo-title">orange 图标</h2>
+    <h2 class="demo-title">Fly 图标</h2>
     <p class="demo-introduction">语义化的矢量图形。</p>
 
     <!-- <orange-anchor>
@@ -17,10 +17,7 @@
         >https://www.iconfont.cn/</a>
       </p>
     </div>
-
-    <fly-backtop :visibilityHeight="300" />
-
-    <div class="orange-orange" id="orange-simple">
+    <div class="fly-fly" id="fly-simple">
       <fly-show-block
         :height="283"
         :introduction="'直接通过设置类名为 iconfont，org-icon- 来使用即可。例如：'"
@@ -37,9 +34,9 @@
         </template>
       </fly-show-block>
       <!-- 常用图标 -->
-      <div id="orange-ofen-list">
+      <div id="fly-ofen-list">
         <h3 class="demo-table-title">常用图标</h3>
-        <ul class="orange-list">
+        <ul class="fly-list">
           <li
             :class="{'rigth_block':index % 5 ===4}"
             :key="item"
@@ -82,11 +79,11 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.orange-orange {
+.fly-fly {
   i {
     font-size: 28px;
   }
-  .orange-list {
+  .fly-list {
     width: 100%;
     overflow: hidden;
     list-style: none;

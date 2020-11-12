@@ -50,8 +50,9 @@
     <div class="demo-code-block">
       <p>transition: all 0.2s linear;</p>
     </div>
-    <fly-backtop :visibilityHeight="300" />
-   
+
+    <!-- 开始使用 -->
+    <h3 class="demo-table-title">开始使用</h3>
   </div>
 </template>
 

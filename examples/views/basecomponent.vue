@@ -12,7 +12,7 @@
 
     <!-- <h3 class="demo-table-title" id="button-simple">基础用法</h3> -->
     <!-- 基础用法DEMO -->
-    <fly-show-block :height="180" :title="'card信息展示组件'" id="card">
+    <orange-demo-block :height="180" :title="'card信息展示组件'" id="card">
       <template v-slot:demo>
         <div class="codepadding">
           <orange-card>
@@ -26,8 +26,8 @@
       <template v-slot:code>
         <code class="html">{{fCode(card.code.html)}}</code>
       </template>
-    </fly-show-block>
-    <fly-show-block :height="220" :title="'锚点'" id="anchor" introduction="通过点击按钮或侧边栏跳转">
+    </orange-demo-block>
+    <orange-demo-block :height="220" :title="'锚点'" id="anchor" introduction="通过点击按钮或侧边栏跳转">
       <template v-slot:demo>
         <div class="codepadding">
           <orange-anchor customize>
@@ -40,9 +40,9 @@
       <template v-slot:code>
         <code class="html">{{fCode(anchor.code.html)}}</code>
       </template>
-    </fly-show-block>
+    </orange-demo-block>
     <!-- 线性按钮 -->
-    <fly-show-block
+    <orange-demo-block
       :height="80"
       :title="'输入框'"
       id="input"
@@ -53,12 +53,12 @@
       <template v-slot:code>
         <code class="html">{{fCode(input.code.html)}}</code>
       </template>
-    </fly-show-block>
+    </orange-demo-block>
     <!-- 禁用DEMO -->
     
 
     <!-- 按钮尺寸 -->
-    <!-- <fly-show-block
+    <!-- <orange-demo-block
       :height="250"
       :title="'按钮尺寸'"
       id="button-Size"
@@ -85,7 +85,7 @@
       <template v-slot:code>
         <code class="html">{{fCode(size.code.html)}}</code>
       </template>
-    </fly-show-block>-->
+    </orange-demo-block>-->
 
     <!-- API -->
     <div id="api">

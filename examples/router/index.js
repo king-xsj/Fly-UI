@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '../components/Index.vue'
+import Home from '../views/Index.vue'
 
 //组件
 import component from './component'
@@ -15,12 +15,11 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home,
-      redirect: '/component/installation',
+      redirect: '/views/installation',
       children: [
         //组件
         ...component,
-        // ...elseComponent
       ]
     },
   ]
-})
+},)
