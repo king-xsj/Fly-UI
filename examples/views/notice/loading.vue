@@ -1,8 +1,23 @@
 <!--  -->
 <template>
-  <div>
-    <div class="loading" @click="showLoading()">loading</div>
-    <div class="loading" @click="closeLoading()">loading</div>
+   <div class="content-box">
+    <h2 class="demo-title">Loading 加载</h2>
+    <p class="demo-introduction">Loading介绍</p>
+    <div class="fly-fly" id="fly-simple">
+      <fly-show-block
+        :height="483"
+       
+        :title="'使用方法'"
+      >
+        <template v-slot:showPart>
+          <fly-button type="primary" @click="showLoading">Loading</fly-button>
+         </template>
+        <template v-slot:code>
+          <code class="html">{{fCode(simple.code.html)}}</code>
+        </template>
+      </fly-show-block>
+    
+    </div>
   </div>
 </template>
 
@@ -10,7 +25,36 @@
 export default {
   data () {
     return {
-      loading:''
+      loading:'',
+      simple: {
+        code: {
+          html:`
+            <template>
+              <div>
+                <fly-button type="primary" @click="showLoading">Primary</fly-button>
+              </div>
+            </template>
+            <script>
+             export default {
+              data(){
+                return {
+
+                }
+              },
+              methods:{
+                showLoading(){
+                  var that = this;
+                  this.loading = this.$loading()
+                  setTimeout(()=>{
+                    that.loading.close()
+                  },3000)
+                }
+              }
+            }
+            <script>
+         `
+        }
+      },
     };
   },
 
@@ -21,10 +65,10 @@ export default {
       this.loading.close()
     },
     showLoading(){
-      // var that = this;
+      var that = this;
       this.loading = this.$loading()
       setTimeout(()=>{
-        // that.loading.close()
+        that.loading.close()
       },3000)
     }
   },

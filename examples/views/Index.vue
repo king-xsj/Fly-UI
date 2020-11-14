@@ -55,11 +55,11 @@ export default {
               name: "Button 按钮",
               path: "#/views/button"
             },
-            {
-              id: "002",
-              name: "Collect 收集",
-              path: "#/views/button-collect"
-            },
+            // {
+            //   id: "002",
+            //   name: "Collect 收集",
+            //   path: "#/views/button-collect"
+            // },
              {
               id: "003",
               name: "BaseComponent",
@@ -75,7 +75,7 @@ export default {
               id: "005",
               group: "Others",
               name: "Backtop 返回顶部",
-              path: "#/views/notice/loading"
+              path: "#/views/others/backtop"
             }
           ]
         },
@@ -114,7 +114,7 @@ export default {
       case "/views/notice/loading":
         this.active = "004"
         break;
-      case "/views/notice/backtop":
+      case "/views/others/backtop":
         this.active = "005"
         break;
     }

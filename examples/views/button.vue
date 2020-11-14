@@ -12,148 +12,71 @@
       <orange-anchor-link href="api" title="API" />
     </orange-anchor> -->
 
-    <h3 class="demo-table-title" id="button-simple">基础用法</h3>
     <!-- 基础用法DEMO -->
-    <orange-demo-block :height="630" :title="'普通按钮'" id="button-Simple">
-      <template v-slot:demo>
+    <fly-show-block
+      :height="200"
+      :title="'普通按钮'"
+      introduction="基础按钮的用法"
+      id="button-Simple"
+    >
+      <template v-slot:showPart>
         <div class="codepadding">
-          <orange-button>Default</orange-button>
-          <orange-button type="success">Success</orange-button>
-          <orange-button type="primary">Primary</orange-button>
-          <orange-button type="danger">Danger</orange-button>
-          <orange-button type="warning">Warning</orange-button>
-          <orange-button type="info">info</orange-button>
-          <orange-button icon="org-icon-icon_search" type="primary"
-            >Search</orange-button
-          >
-        </div>
-        <div class="codepadding">
-          <orange-button plain>Default</orange-button>
-          <orange-button plain type="success">Success</orange-button>
-          <orange-button plain type="primary">Primary</orange-button>
-          <orange-button plain type="danger">Danger</orange-button>
-          <orange-button plain type="warning">Warning</orange-button>
-          <orange-button plain type="info">info</orange-button>
-
-          <orange-button plain icon="org-icon-icon_search" type="primary"
-            >Search</orange-button
-          >
-        </div>
-        <div class="codepadding">
-          <orange-button round>Default</orange-button>
-          <orange-button round type="success">Success</orange-button>
-          <orange-button round type="primary">Primary</orange-button>
-          <orange-button round type="danger">Danger</orange-button>
-          <orange-button round type="warning">Warning</orange-button>
-          <orange-button round type="info">info</orange-button>
-
-          <orange-button round icon="org-icon-icon_search" type="primary"
-            >Search</orange-button
-          >
-        </div>
-        <div class="codepadding">
-          <orange-button circle icon="org-icon-react"></orange-button>
-          <orange-button
-            circle
-            icon="org-icon-vue"
-            type="primary"
-          ></orange-button>
-          <orange-button
-            circle
-            icon="org-icon-js"
-            type="success"
-          ></orange-button>
-          <orange-button
-            circle
-            icon="org-icon-angular"
-            type="danger"
-          ></orange-button>
-          <orange-button
-            circle
-            icon="org-icon-caishichang-"
-            type="warning"
-          ></orange-button>
-          <orange-button
-            circle
-            icon="org-icon-icon_QRcode"
-            type="info"
-          ></orange-button>
+          <fly-button>Default</fly-button>
+          <fly-button type="primary">Primary</fly-button>
+          <fly-button type="success">Success</fly-button>
+          <fly-button type="danger">Danger</fly-button>
+          <fly-button type="warning">Warning</fly-button>
+          <fly-button type="info">info</fly-button>
+          <fly-button type="text">text</fly-button>
         </div>
       </template>
       <template v-slot:code>
         <code class="html">{{ fCode(simple.code.html) }}</code>
       </template>
-    </orange-demo-block>
-    <orange-demo-block :height="150" :title="'暗色按钮'" id="button-Black">
-      <template v-slot:demo>
-        <div class="codepadding" style="background: #000">
-          <orange-button isblack>Default</orange-button>
-          <orange-button isblack type="danger">Danger</orange-button>
-        </div>
-      </template>
-      <template v-slot:code>
-        <code class="html">{{ fCode(black.code.html) }}</code>
-      </template>
-    </orange-demo-block>
-    <!-- 线性按钮 -->
-    <orange-demo-block :height="168" :title="'线性按钮'" id="button-Line">
-      <template v-slot:demo>
-        <orange-line-button disabled>Default</orange-line-button>
-        <orange-line-button disabled type="success">Success</orange-line-button>
-        <orange-line-button disabled type="danger">Danger</orange-line-button>
-        <orange-line-button disabled type="warn">warn</orange-line-button>
-        <orange-line-button disabled type="info">info</orange-line-button>
-      </template>
-      <template v-slot:code>
-        <code class="html">{{ fCode(line.code.html) }}</code>
-      </template>
-    </orange-demo-block>
-    <!-- 禁用DEMO -->
-    <orange-demo-block :height="168" :title="'禁用'" id="button-disabled">
-      <template v-slot:demo>
-        <orange-button disabled>Default</orange-button>
-        <orange-button disabled type="success">Success</orange-button>
-        <orange-button disabled type="primary">Primary</orange-button>
-        <orange-button disabled type="danger">Danger</orange-button>
-        <orange-button disabled icon="org-icon-icon_search" type="primary"
-          >Search</orange-button
-        >
-      </template>
-      <template v-slot:code>
-        <code class="html">{{ fCode(disabled.code.html) }}</code>
-      </template>
-    </orange-demo-block>
-
-    <!-- 按钮尺寸 -->
-    <orange-demo-block
-      :height="250"
-      :title="'按钮尺寸'"
-      id="button-Size"
-      introduction="自定义修改颜色，其type必须设置为customize"
+    </fly-show-block>
+    <fly-show-block
+      :height="200"
+      :title="'圆角按钮'"
+      introduction="圆角按钮用法"
+      id="button-Simple"
     >
-      <template v-slot:demo>
-        <div style="padding: 10p">
-          <orange-button size="medium">medium</orange-button>
-          <orange-button size="small">small</orange-button>
-          <orange-button size="mini">mini</orange-button>
-        </div>
-
-        <div style="margin-top: 10px; padding: 10p">
-          <orange-line-button size="medium">medium</orange-line-button>
-          <orange-line-button size="small">small</orange-line-button>
-          <orange-line-button size="mini">mini</orange-line-button>
-        </div>
-        <div style="margin-top: 10px; padding: 10px; background: #000">
-          <orange-button isblack size="medium">medium</orange-button>
-          <orange-button isblack size="small">small</orange-button>
-          <orange-button isblack size="mini">mini</orange-button>
+      <template v-slot:showPart>
+        <div class="codepadding">
+          <fly-button round>Default</fly-button>
+          <fly-button type="primary" round>Primary</fly-button>
+          <fly-button type="success" round>Success</fly-button>
+          <fly-button type="danger" round>Danger</fly-button>
+          <fly-button type="warning" round>Warning</fly-button>
+          <fly-button type="info" round>info</fly-button>
         </div>
       </template>
       <template v-slot:code>
-        <code class="html">{{ fCode(size.code.html) }}</code>
+        <code class="html">{{ fCode(simple.code.roundHtml) }}</code>
       </template>
-    </orange-demo-block>
-    <fly-backtop :visibilityHeight="300" />
+    </fly-show-block>
+    <!-- 基础用法DEMO -->
+    <fly-show-block
+      :height="200"
+      :title="'禁用按钮'"
+      introduction="按钮不可用状态"
+      id="button-Simple"
+    >
+      <template v-slot:showPart>
+        <div class="codepadding">
+          <fly-button disabled>Default</fly-button>
+          <fly-button type="primary" disabled>Primary</fly-button>
+          <fly-button type="success" disabled>Success</fly-button>
+          <fly-button type="danger" disabled>Danger</fly-button>
+          <fly-button type="warning" disabled>Warning</fly-button>
+          <fly-button type="info" disabled>info</fly-button>
+          <fly-button type="text" disabled>text</fly-button>
+        </div>
+      </template>
+      <template v-slot:code>
+        <code class="html">{{ fCode(simple.code.disabledHtml) }}</code>
+      </template>
+    </fly-show-block>
+
     <!-- API -->
     <div id="api">
       <h3 class="demo-table-title">API</h3>
@@ -173,96 +96,45 @@ export default {
       simple: {
         code: {
           html: `
-           <orange-button>Default</orange-button>
-          <orange-button type="success">Success</orange-button>
-          <orange-button type="primary">Primary</orange-button>
-          <orange-button type="danger">Danger</orange-button>
-          <orange-button type="warning">Warning</orange-button>
-          <orange-button type="info">info</orange-button>
-          <orange-button icon="org-icon-icon_search" type="primary">Search</orange-button>
-          <orange-button plain>Default</orange-button>
-          <orange-button plain type="success">Success</orange-button>
-          <orange-button plain type="primary">Primary</orange-button>
-          <orange-button plain type="danger">Danger</orange-button>
-          <orange-button plain type="warning">Warning</orange-button>
-          <orange-button plain type="info">info</orange-button>
-          <orange-button plain icon="org-icon-icon_search" type="primary">Search</orange-button>
-          <orange-button round>Default</orange-button>
-          <orange-button round type="success">Success</orange-button>
-          <orange-button round type="primary">Primary</orange-button>
-          <orange-button round type="danger">Danger</orange-button>
-          <orange-button round type="warning">Warning</orange-button>
-          <orange-button round type="info">info</orange-button>
-          <orange-button round icon="org-icon-icon_search" type="primary">Search</orange-button>
-          <orange-button circle icon="org-icon-react"></orange-button>
-          <orange-button circle icon="org-icon-vue" type="primary"></orange-button>
-          <orange-button circle icon="org-icon-js" type="success"></orange-button>
-          <orange-button circle icon="org-icon-angular" type="danger"></orange-button>
-          <orange-button circle icon="org-icon-caishichang-" type="warning"></orange-button>
-          <orange-button circle icon="org-icon-icon_QRcode" type="info"></orange-button>
+            <fly-button>Default</fly-button>
+            <fly-button type="primary">Primary</fly-button>
+            <fly-button type="success">Success</fly-button>
+            <fly-button type="danger">Danger</fly-button>
+            <fly-button type="warning">Warning</fly-button>
+            <fly-button type="info">info</fly-button>
+            <fly-button type="text">text</fly-button>
           `,
-        },
-      },
-      black: {
-        code: {
-          html: `
-         <div class="codepadding" style="background:#000;">
-          <orange-button isblack>Default</orange-button>
-          <orange-button isblack type="danger">Danger</orange-button>
-        </div>
+          roundHtml:`
+          <fly-button round>Default</fly-button>
+          <fly-button type="primary" round>Primary</fly-button>
+          <fly-button type="success" round>Success</fly-button>
+          <fly-button type="danger" round>Danger</fly-button>
+          <fly-button type="warning" round>Warning</fly-button>
+          <fly-button type="info" round>info</fly-button>
           `,
-        },
-      },
-      line: {
-        code: {
-          html: `
-           <orange-line-button disabled>Default</orange-line-button>
-        <orange-line-button disabled type="success">Success</orange-line-button>
-        <orange-line-button disabled type="danger">Danger</orange-line-button>
-        <orange-line-button disabled type="warn">warn</orange-line-button>
-        <orange-line-button disabled type="info">info</orange-line-button>
-          `,
-        },
-      },
-      disabled: {
-        code: {
-          html: `
-          <orange-button disabled>Default</orange-button>
-        <orange-button disabled type="success">Success</orange-button>
-        <orange-button disabled type="primary">Primary</orange-button>
-        <orange-button disabled type="danger">Danger</orange-button>
-        <orange-button disabled icon="org-icon-icon_search" type="primary">Search</orange-button>
-          `,
-        },
-      },
-      size: {
-        code: {
-          html: `
-          <orange-button size="medium">medium</orange-button>
-          <orange-button size="small">small</orange-button>
-          <orange-button size="mini">mini</orange-button>
-          <orange-line-button  size="medium">medium</orange-line-button>
-          <orange-line-button  size="small">small</orange-line-button>
-          <orange-line-button  size="mini">mini</orange-line-button>
-          <orange-button isblack size="medium">medium</orange-button>
-          <orange-button isblack size="small">small</orange-button>
-          <orange-button isblack size="mini">mini</orange-button>
-          `,
+          disabledHtml:`
+           <fly-button disabled>Default</fly-button>
+          <fly-button type="primary" disabled>Primary</fly-button>
+          <fly-button type="success" disabled>Success</fly-button>
+          <fly-button type="danger" disabled>Danger</fly-button>
+          <fly-button type="warning" disabled>Warning</fly-button>
+          <fly-button type="info" disabled>info</fly-button>
+          <fly-button type="text" disabled>text</fly-button>
+          `
         },
       },
       api: [
         {
           parameter: "type",
           description:
-            "设置按钮类型,default / primary / success  / danger / warn / info",
+            "设置按钮类型,default / primary / success  / danger / warn / info / text",
           dataTypes: "String",
           default: "default",
         },
         {
           parameter: "size",
-          description: "设置按钮大小,medium/small/mini",
+          description: "暂未开发",
           dataTypes: "String",
-
           default: "medium",
         },
         {
@@ -287,15 +159,9 @@ export default {
 
         {
           parameter: "icon",
-          description: "按钮图标类名",
+          description: "暂未开发",
           dataTypes: "String",
           default: "",
-        },
-        {
-          parameter: "isblack",
-          description: "是否开启黑色按钮,true/false",
-          dataTypes: "Boolean",
-          default: "false",
         },
       ],
     };

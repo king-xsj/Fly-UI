@@ -13,7 +13,7 @@
         <slot name="showPart" />
       </div>
       <div class="show-code" :style="{ height: code_height+'px' }">
-        <pre v-highlightjs>
+          <pre v-highlightjs>
             <slot name="code" />
           </pre>
       </div>
