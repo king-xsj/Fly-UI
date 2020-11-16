@@ -94,7 +94,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-$primary: #66b1ff; /*1.这就是声明变量*/
+$primary: #378eeb; /*1.这就是声明变量*/
 $success: #67c23a; /*1.这就是声明变量*/
 $warning: #e6a23c; /*1.这就是声明变量*/
 $danger: #f56c6c; /*1.这就是声明变量*/
