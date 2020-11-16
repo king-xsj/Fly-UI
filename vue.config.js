@@ -39,7 +39,7 @@ const devConfig = {
   },
 
   publicPath: './',
-  outputDir: 'docs',
+  outputDir: 'dist',
   ...baseConfig
 }
 

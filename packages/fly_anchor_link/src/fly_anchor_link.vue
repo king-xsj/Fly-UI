@@ -1,6 +1,6 @@
 <template>
   <div
-    :class="{'orange_anchor_link':!($slots.default),'orange_anchor_link-left':$parent.position == 'left'}"
+    :class="{'fly_anchor_link':!($slots.default),'fly_anchor_link-left':$parent.position == 'left'}"
     :id="'link-' + hrefTotal + '-' + hrefHeight"
     :title="title"
     @click="jump"
@@ -11,7 +11,7 @@
 </template>
 <script>
 export default {
-  name: 'orange-anchor-link',
+  name: 'fly-anchor-link',
   props: {
     href: {
       type: String,
@@ -119,7 +119,7 @@ export default {
 <style lang="scss" scoped>
 $--color-primary:#2cbfbe !default;
 
-.orange_anchor_link {
+.fly_anchor_link {
   cursor: pointer;
   display: block;
   position: relative;
@@ -134,10 +134,10 @@ $--color-primary:#2cbfbe !default;
     color: $--color-primary;
   }
 }
-.orange_anchor_link-active {
+.fly_anchor_link-active {
   color: $--color-primary !important;
 }
-.orange_anchor_link-left {
+.fly_anchor_link-left {
   padding: 7px 16px 7px 0;
 }
 </style>

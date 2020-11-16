@@ -1,22 +1,22 @@
 <template>
   <div
-    :class="[{'orange-anchor':!customize,'orange-anchor-left':position == 'left'},[anchorClass]]"
+    :class="[{'fly-anchor':!customize,'fly-anchor-left':position == 'left'},[anchorClass]]"
   >
-    <div class="orange-anchor-ink">
+    <div class="fly-anchor-ink">
       <span
         :class="{'visible':linkBallShow}"
         :style="{top:linkBallTop + 'px'}"
-        class="orange-anchor-ink-ball"
+        class="fly-anchor-ink-ball"
       ></span>
     </div>
-    <div class="orange-anchor-box">
+    <div class="fly-anchor-box">
       <slot></slot>
     </div>
   </div>
 </template>
 <script>
 export default {
-  name: 'orange-anchor',
+  name: 'fly-anchor',
   props: {
     target: {
       type: String,
@@ -129,9 +129,9 @@ export default {
     activeTitle() {
       for (let i = 0; i < this.$slots.default.length; i++) {
         if (this.index == i) {
-          this.$slots.default[i].elm.classList.add('orange-anchor-link-active')
+          this.$slots.default[i].elm.classList.add('fly-anchor-link-active')
         } else {
-          this.$slots.default[i].elm.classList.remove('orange-anchor-link-active')
+          this.$slots.default[i].elm.classList.remove('fly-anchor-link-active')
         }
       }
     }
@@ -141,13 +141,13 @@ export default {
 <style lang="scss" scoped>
 $--color-primary:#2cbfbe !default;
 div
-.orange-anchor {
+.fly-anchor {
   z-index: 99;
   position: fixed;
   right: 10px;
   top: 135px;
   width: 150px;
-  .orange-anchor-ink {
+  .fly-anchor-ink {
     position: absolute;
     height: 100%;
     left: 0;
@@ -161,7 +161,7 @@ div
       background-color: #e8e8e8;
       margin: 0 auto;
     }
-    .orange-anchor-ink-ball {
+    .fly-anchor-ink-ball {
       opacity: 0;
       position: absolute;
       width: 8px;
@@ -176,7 +176,7 @@ div
       transform: translateX(-50%);
     }
   }
-  .orange-anchor-box {
+  .fly-anchor-box {
     font-family: 'Chinese Quote', -apple-system, BlinkMacSystemFont, 'Segoe UI',
       'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue',
       Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
@@ -193,14 +193,14 @@ div
     padding-left: 2px;
   }
 }
-.orange-anchor-left {
+.fly-anchor-left {
   right: auto;
   left: 10px;
-  .orange-anchor-ink {
+  .fly-anchor-ink {
     right: 0;
     left: auto;
   }
-  .orange-anchor-box {
+  .fly-anchor-box {
     text-align: right;
   }
 }

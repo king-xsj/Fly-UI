@@ -1,16 +1,16 @@
 {
-  "name": "fly-ui",
-  "version": "0.1.1",
+  "name": "fly-ui-win",
+  "version": "0.1.13",
   "private": false,
-  "description": "this is instring collect",
-  "keyword": "ui",
-  "main": "lib/index.js",
+  "description": "this is instring Fly",
+  "keyword": "UI、框架",
+  "main": "lib/fly_ui.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "deploy": "bash deploy.sh",
-    "lib": "vue-cli-service build --target lib --name Fly-UI --dest lib packages/index.js"
+    "lib": "vue-cli-service build --target lib --name fly-ui-win --dest lib packages/index.js"
   },
   "repository": {
     "type": "git",
@@ -28,7 +28,7 @@
     "@vue/cli-service": "^4.4.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
+    "eslint-plugin-vue": "^6.2.2",   
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {

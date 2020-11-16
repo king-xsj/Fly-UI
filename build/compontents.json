@@ -1,15 +1,11 @@
 {
-    "anchor": "/Users/chenzhikun/project/GitHub/orange_ui/packages/orange_anchor/index.js",
-    "anchor_link": "/Users/chenzhikun/project/GitHub/orange_ui/packages/orange_anchor_link/index.js",
-    "backtop": "/Users/chenzhikun/project/GitHub/orange_ui/packages/orange_backtop/index.js",
-    "btn": "/Users/chenzhikun/project/GitHub/orange_ui/packages/orange_btn/index.js",
-    "card": "/Users/chenzhikun/project/GitHub/orange_ui/packages/orange_card/index.js",
-    "demo_block": "/Users/chenzhikun/project/GitHub/orange_ui/packages/orange_demo_block/index.js",
-    "input": "/Users/chenzhikun/project/GitHub/orange_ui/packages/orange_input/index.js",
-    "line_btn": "/Users/chenzhikun/project/GitHub/orange_ui/packages/orange_line_btn/index.js",
-    "overlap_btn": "/Users/chenzhikun/project/GitHub/orange_ui/packages/orange_overlap_btn/index.js",
-    "reflect_btn": "/Users/chenzhikun/project/GitHub/orange_ui/packages/orange_reflect_btn/index.js",
-    "rocket_btn": "/Users/chenzhikun/project/GitHub/orange_ui/packages/orange_rocket_btn/index.js",
-    "run_btn": "/Users/chenzhikun/project/GitHub/orange_ui/packages/orange_run_btn/index.js",
-    "table_simple": "/Users/chenzhikun/project/GitHub/orange_ui/packages/orange_table_simple/index.js"
+    "anchor": "../packages/packages/fly_anchor/index.js",
+    "anchor_link": "../packages/fly_anchor_link/index.js",
+    "backtop": "../packages/fly_backtop/index.js",
+    "btn": "../packages/fly_btn/index.js",
+    "card": "../packages/fly_card/index.js",
+    "fly_loading": "../packages/fly_loading/index.js",
+    "show_block": "../packages/fly_show_block/index.js",
+    "table_simple": "../packages/fly_table_simple/index.js"
+
 }

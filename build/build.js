@@ -22,11 +22,12 @@ const files = fs.readdirSync(dir);
 files.forEach(file => {
     const absolutePath = path.join(dir, file);
     if (isDir(absolutePath)) {
-        let fileKey = transformStr3(file.replace('orange_', ''))
+        let fileKey = transformStr3(file.replace('fly_', ''))
         // console.log(fileKey)
-        json[fileKey] = `/Users/chenzhikun/project/GitHub/orange_ui/packages/${file}/index.js`;
-        // json[fileKey] = `D:/projects/orange_ui/packages/${file}/index.js`;
+        // json[fileKey] = `/Users/chenzhikun/project/GitHub/orange_ui/packages/${file}/index.js`;
+        json[fileKey] = `../packages/${file}/index.js`
+        // projects/orange_ui/packages/${file}/index.js`;
     }
 });
-
+console.log('---------------------');
 console.log(JSON.stringify(json));
