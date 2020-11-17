@@ -1,10 +1,10 @@
 {
   "name": "fly-ui-win",
-  "version": "0.1.13",
+  "version": "0.1.15",
   "private": false,
   "description": "this is instring Fly",
   "keyword": "UI、框架",
-  "main": "lib/fly_ui.umd.min.js",
+  "main": "lib/fly-ui-win.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:king-xsj/Fly-UI.git"
+    "url": "https://github.com/king-xsj/Fly-UI"
   },
   "dependencies": {
     "core-js": "^3.6.5",

@@ -5,7 +5,7 @@
 ### How to used
 
 ```
-npm i fly_ui
+npm i fly-ui-win
 ```
 
 ###文件夹说明
@@ -17,8 +17,8 @@ packages 文件夹，我们组件的编写都在packages文件夹中进行
 在main.js 中
 
 ```
-import FlyUI from 'fly_ui'
-import 'fly_ui/lib/fly_ui.css'
+import FlyUI from 'fly-ui-win'
+import 'fly-ui-win/lib/fly-ui-win.css'
 
 Vue.use(FlyUI)
 ```
@@ -29,7 +29,7 @@ Vue.use(FlyUI)
 Give a ⭐️ if this project helped you!
 
 ```
-https://github.com/czkm/Orange-Collect
+https://github.com/king-xsj/Fly-UI
 ```
 
 核心命名规则
