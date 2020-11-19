@@ -12,22 +12,17 @@
 
     <!-- <h3 class="demo-table-title" id="button-simple">基础用法</h3> -->
     <!-- 基础用法DEMO -->
-    <orange-demo-block :height="180" :title="'card信息展示组件'" id="card">
+    <fly-show-block :height="180" :title="'card信息展示组件'" id="card">
       <template v-slot:demo>
         <div class="codepadding">
-          <orange-card>
-            <template #header>
-              <h1>头部插槽</h1>
-            </template>
-            内部内容
-          </orange-card>
+         
         </div>
       </template>
       <template v-slot:code>
         <code class="html">{{fCode(card.code.html)}}</code>
       </template>
-    </orange-demo-block>
-    <orange-demo-block :height="220" :title="'锚点'" id="anchor" introduction="通过点击按钮或侧边栏跳转">
+    </fly-show-block>
+    <fly-show-block :height="220" :title="'锚点'" id="anchor" introduction="通过点击按钮或侧边栏跳转">
       <template v-slot:demo>
         <div class="codepadding">
           <orange-anchor customize>
@@ -40,9 +35,9 @@
       <template v-slot:code>
         <code class="html">{{fCode(anchor.code.html)}}</code>
       </template>
-    </orange-demo-block>
+    </fly-show-block>
     <!-- 线性按钮 -->
-    <orange-demo-block
+    <fly-show-block
       :height="80"
       :title="'输入框'"
       id="input"
@@ -53,40 +48,11 @@
       <template v-slot:code>
         <code class="html">{{fCode(input.code.html)}}</code>
       </template>
-    </orange-demo-block>
+    </fly-show-block>
     <!-- 禁用DEMO -->
     
 
-    <!-- 按钮尺寸 -->
-    <!-- <orange-demo-block
-      :height="250"
-      :title="'按钮尺寸'"
-      id="button-Size"
-      introduction="自定义修改颜色，其type必须设置为customize"
-    >
-      <template v-slot:demo>
-        <div style="Padding:10p">
-          <orange-button size="medium">medium</orange-button>
-          <orange-button size="small">small</orange-button>
-          <orange-button size="mini">mini</orange-button>
-        </div>
-
-        <div style="margin-top:10px;padding:10p">
-          <orange-line-button size="medium">medium</orange-line-button>
-          <orange-line-button size="small">small</orange-line-button>
-          <orange-line-button size="mini">mini</orange-line-button>
-        </div>
-        <div style="margin-top:10px;padding:10px;background:#000">
-          <orange-button isblack size="medium">medium</orange-button>
-          <orange-button isblack size="small">small</orange-button>
-          <orange-button isblack size="mini">mini</orange-button>
-        </div>
-      </template>
-      <template v-slot:code>
-        <code class="html">{{fCode(size.code.html)}}</code>
-      </template>
-    </orange-demo-block>-->
-
+   
     <!-- API -->
     <div id="api">
       <h3 class="demo-table-title">API</h3>

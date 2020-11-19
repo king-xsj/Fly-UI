@@ -33,23 +33,23 @@
         target="_blank"
       >https://www.npmjs.com/package/shn-vue-ui</a>
     </p>-->
-    <div class="demo-code-block">npm i orange_collect</div>
+    <div class="demo-code-block">npm i fly-ui-win</div>
 
     <!-- 快速上手 -->
     <h3 class="demo-table-title">快速上手</h3>
-    <p class="demo-introduction">你可以在 main.js 中引入整个 orange_collect。</p>
+    <p class="demo-introduction">你可以在 main.js 中引入整个 FlyUI</p>
     <div class="demo-code-block">
-      <p>import orange_collect from 'orange_collect'</p>
-      <p>import 'orange_collect/lib/orange_collect.css'</p>
+      <p>import FlyUI from 'fly-ui-win'</p>
+      <p>import 'fly-ui-win/lib/fly-ui-win.css'</p>
 
-      <p style="margin-top:20px">Vue.use(orange_collect);</p>
+      <p style="margin-top:20px">Vue.use(FlyUI);</p>
     </div>
 
-    <!-- 常用动效 -->
+    <!-- 常用动效
     <h3 class="demo-table-title">常用动效</h3>
     <div class="demo-code-block">
       <p>transition: all 0.2s linear;</p>
-    </div>
+    </div> -->
 
     <!-- 开始使用 -->
     <h3 class="demo-table-title">开始使用</h3>

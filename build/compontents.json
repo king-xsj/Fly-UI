@@ -3,7 +3,6 @@
     "anchor_link": "../packages/fly_anchor_link/index.js",
     "backtop": "../packages/fly_backtop/index.js",
     "btn": "../packages/fly_btn/index.js",
-    "card": "../packages/fly_card/index.js",
     "fly_loading": "../packages/fly_loading/index.js",
     "show_block": "../packages/fly_show_block/index.js",
     "table_simple": "../packages/fly_table_simple/index.js"

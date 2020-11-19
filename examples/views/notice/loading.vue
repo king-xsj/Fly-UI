@@ -16,7 +16,7 @@
           <code class="html">{{fCode(simple.code.html)}}</code>
         </template>
       </fly-show-block>
-    
+    <fly-card></fly-card>
     </div>
   </div>
 </template>

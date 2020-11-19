@@ -24,9 +24,8 @@ files.forEach(file => {
     if (isDir(absolutePath)) {
         let fileKey = transformStr3(file.replace('fly_', ''))
         // console.log(fileKey)
-        // json[fileKey] = `/Users/chenzhikun/project/GitHub/orange_ui/packages/${file}/index.js`;
+       
         json[fileKey] = `../packages/${file}/index.js`
-        // projects/orange_ui/packages/${file}/index.js`;
     }
 });
 console.log('---------------------');
