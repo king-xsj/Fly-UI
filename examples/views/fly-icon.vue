@@ -3,11 +3,6 @@
     <h2 class="demo-title">Fly 图标</h2>
     <p class="demo-introduction">语义化的矢量图形。</p>
 
-    <!-- <orange-anchor>
-      <orange-anchor-link href="orange-simple" title="使用方法" />
-      <orange-anchor-link href="orange-ofen-list" title="常用图标" />
-    </orange-anchor> -->
-
     <div class="demo-tip">
       <p>该项目使用 iconfont 图标库</p>
       <p>

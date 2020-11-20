@@ -3,14 +3,12 @@
     <h2 class="demo-title">Button 按钮</h2>
     <p class="demo-introduction">常用按钮介绍</p>
 
-    <!-- <orange-anchor>
-      <orange-anchor-link href="button-Simple" title="普通按钮" />
-      <orange-anchor-link href="button-Black" title="暗色按钮" />
-      <orange-anchor-link href="button-Line" title="线性按钮" />
-      <orange-anchor-link href="button-disabled" title="禁用" />
-      <orange-anchor-link href="button-Size" title="按钮尺寸" />
-      <orange-anchor-link href="api" title="API" />
-    </orange-anchor> -->
+    <fly-anchor>
+      <fly-anchor-link href="button-Simple" title="普通按钮" />
+      <fly-anchor-link href="button-Black" title="暗色按钮" />
+      <fly-anchor-link href="button-Line" title="线性按钮" />
+     
+    </fly-anchor>
 
     <!-- 基础用法DEMO -->
     <fly-show-block
@@ -38,7 +36,7 @@
       :height="200"
       :title="'圆角按钮'"
       introduction="圆角按钮用法"
-      id="button-Simple"
+      id="button-Black"
     >
       <template v-slot:showPart>
         <div class="codepadding">
@@ -59,7 +57,7 @@
       :height="200"
       :title="'禁用按钮'"
       introduction="按钮不可用状态"
-      id="button-Simple"
+      id="button-Line"
     >
       <template v-slot:showPart>
         <div class="codepadding">

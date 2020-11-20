@@ -55,16 +55,7 @@ export default {
               name: "Button 按钮",
               path: "#/views/button"
             },
-            // {
-            //   id: "002",
-            //   name: "Collect 收集",
-            //   path: "#/views/button-collect"
-            // },
-             {
-              id: "003",
-              name: "BaseComponent",
-              path: "#/views/basecomponent"
-            },
+           
             {
               id: "004",
               group: "Notice",
@@ -99,15 +90,9 @@ export default {
       case "/views/icon":
         this.active = -2;
         break;
-      case "/views/img-card":
-        this.active = "201";
-        break;
-      case "/views/collapse":
-        this.active = "300";
-        break;
-      case "/views/backtop":
-        this.active = "301";
-        break;
+     
+     
+      
       case "/views/button":
         this.active = "001";
         break;

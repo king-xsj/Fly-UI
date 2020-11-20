@@ -1,7 +1,6 @@
 import Installation from '../views/installation'
 import FlyIcon from '../views/fly-icon.vue'
 import ButtonDemo from '../views/button.vue'
-import BaseComponent from '../views/basecomponent.vue'
 import Loading from '../views/notice/loading.vue'
 import Backtop from '../views/others/backtop.vue'
 export default [{
@@ -25,14 +24,6 @@ export default [{
     path: '/views/button',
     name: 'ButtonDemo',
     component: ButtonDemo,
-    meta: {
-      title: '组件|Fly-UI'
-    }
-  },
-  {
-    path: '/views/basecomponent',
-    name: 'BaseComponent',
-    component: BaseComponent,
     meta: {
       title: '组件|Fly-UI'
     }
