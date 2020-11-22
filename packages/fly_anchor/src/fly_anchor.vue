@@ -144,7 +144,7 @@ div
 .fly-anchor {
   z-index: 99;
   position: fixed;
-  right: 10px;
+  right: 140px;
   top: 135px;
   width: 150px;
   .fly-anchor-ink {

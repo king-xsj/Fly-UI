@@ -86,7 +86,7 @@
 
 <script>
 export default {
-  name: "shn-button-demo",
+  name: "button-demo",
   data() {
     return {
       thead: ["参数", "说明", "类型", "默认值"],
