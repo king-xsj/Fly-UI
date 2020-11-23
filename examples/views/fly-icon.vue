@@ -21,7 +21,10 @@
           <i class="iconfont fly-arrow-top" style="margin: 0 20px"></i>
           <i class="iconfont fly-arrow-right" style="margin: 0 20px"></i>
           <i class="iconfont fly-arrow-bottom" style="margin: 0 20px"></i>
-          <i class="iconfont fly-back" style="margin: 0 20px"></i>
+          <i class="iconfont fly-error" style="margin: 0 20px"></i>
+          <i class="iconfont fly-success" style="margin: 0 20px"></i>
+          <i class="iconfont fly-info" style="margin: 0 20px"></i>
+          <i class="iconfont fly-warning" style="margin: 0 20px"></i>
         </template>
         <template v-slot:code>
           <code class="html">{{ fCode(simple.code.html) }}</code>
@@ -36,11 +39,11 @@
             :class="{ rigth_block: index % 5 === 4 }"
             :key="item"
             v-for="(item, index) in ofen_icon_list"
-            :data-clipboard-text="'iconfont '+item"
+            :data-clipboard-text="item"
             @click="copyContent"
           >
             <div>
-              <i :class="item" class="iconfont"></i>
+              <i :class="item"></i>
               <p class="icon-name">{{ item }}</p>
             </div>
           </li>
@@ -61,14 +64,21 @@ export default {
           <i class="iconfont fly-arrow-right" style="margin: 0 20px;"></i>
           <i class="iconfont fly-arrow-bottom" style="margin: 0 20px;"></i>
           <i class="iconfont fly-back" style="margin: 0 20px;"></i>
+          <i class="iconfont fly-error" style="margin: 0 20px"></i>
+          <i class="iconfont fly-success" style="margin: 0 20px"></i>
+          <i class="iconfont fly-info" style="margin: 0 20px"></i>
+          <i class="iconfont fly-warning" style="margin: 0 20px"></i>
          `,
         },
       },
       ofen_icon_list: [
-        "fly-arrow-top",
-        "fly-arrow-right",
-        "fly-arrow-bottom",
-        "fly-back",
+        "iconfont fly-arrow-top",
+        "iconfont fly-arrow-right",
+        "iconfont fly-arrow-bottom",
+        "iconfont fly-error",
+        "iconfont fly-success",
+        "iconfont fly-info",
+        "iconfont fly-warning",
       ],
     };
   },
