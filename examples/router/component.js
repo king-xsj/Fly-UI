@@ -3,6 +3,7 @@ import FlyIcon from '../views/fly-icon.vue'
 import ButtonDemo from '../views/button.vue'
 import Loading from '../views/notice/loading.vue'
 import Backtop from '../views/others/backtop.vue'
+import Message from '../views/notice/message.vue'
 export default [{
     path: '/views/installation',
     name: 'Installation',
@@ -34,6 +35,14 @@ export default [{
     component: Loading,
     meta: {
       title: '组件|Fly-Loading'
+    }
+  },
+  {
+    path: '/views/notice/message',
+    name: 'Message',
+    component: Message,
+    meta: {
+      title: '组件|Fly-Message'
     }
   },
   {

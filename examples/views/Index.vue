@@ -63,6 +63,11 @@ export default {
               path: "#/views/notice/loading"
             },
             {
+              id: "002",
+              name: "Message 消息提示",
+              path: "#/views/notice/message"
+            },
+            {
               id: "005",
               group: "Others",
               name: "Backtop 返回顶部",
@@ -90,7 +95,9 @@ export default {
       case "/views/icon":
         this.active = -2;
         break;
-     
+      case "/views/message":
+        this.active = "002";
+        break;
      
       
       case "/views/button":
@@ -154,7 +161,7 @@ export default {
     .sidebar {
       position: fixed;
       margin-right: 40px;
-      width: 200px;
+      width: 260px;
       height: 80%;
       top: 135px;
       visibility: hidden;
@@ -211,7 +218,7 @@ export default {
       flex: 1;
       width: 100%;
       padding: 0 0px 0 10px;
-      margin-left: 240px;
+      margin-left: 300px;
     }
   }
 }

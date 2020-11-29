@@ -4,9 +4,8 @@
     <h2 class="demo-title">Backtop 返回顶部</h2>
    <fly-show-block
       :height="200"
-      :title="'普通按钮'"
-      introduction="基础按钮的用法"
-      id="button-Simple"
+      :title="'返回顶部'"
+      introduction="返回顶部的用法"
     >
       <template v-slot:showPart>
           滚动页面
