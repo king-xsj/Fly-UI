@@ -16,7 +16,6 @@
           <code class="html">{{fCode(simple.code.html)}}</code>
         </template>
       </fly-show-block>
-    <fly-card></fly-card>
     </div>
   </div>
 </template>
@@ -44,7 +43,7 @@ export default {
               methods:{
                 showLoading(){
                   var that = this;
-                  this.loading = this.$loading()
+                  this.loading = this.$Loading()
                   setTimeout(()=>{
                     that.loading.close()
                   },3000)
@@ -66,7 +65,7 @@ export default {
     },
     showLoading(){
       var that = this;
-      this.loading = this.$loading()
+      this.loading = this.$Loading()
       setTimeout(()=>{
         that.loading.close()
       },3000)

@@ -25,6 +25,7 @@ const Loading = function(options={}){
     data:options
   })
   parent.appendChild(instance.$el);
+  console.log(instance.text);
   Vue.nextTick(()=>{
     instance.showLoading()
   })

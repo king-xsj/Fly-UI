@@ -6,15 +6,14 @@ import fly_anchor_link from './fly_anchor_link'
 import fly_backtop from './fly_backtop'
 import fly_table_simple from './fly_table_simple'
 import fly_show_block from './fly_show_block'
-import fly_loading from './fly_loading/index'
-
+import fly_loading from './fly_loading'
+import fly_message from './fly_message'
 // 存储组件列表
 const components = [
   fly_btn,
   fly_anchor,
   fly_anchor_link,
   fly_backtop,
-
   fly_table_simple,
   fly_show_block,
   // fly_loading,
@@ -27,7 +26,8 @@ const install = function (Vue) {
   // 遍历注册全局组件
   components.map(component => Vue.component(component.name, component))
 
-  Vue.prototype.$loading = fly_loading.FlyLoading;
+  Vue.prototype.$Loading = fly_loading;
+  Vue.prototype.$Message = fly_message;
 }
 
 // 判断是否是直接引入文件
@@ -43,6 +43,5 @@ export default {
   fly_backtop,
   fly_anchor_link,
   fly_table_simple,
-  fly_show_block,
-  fly_loading
+  fly_show_block
 }

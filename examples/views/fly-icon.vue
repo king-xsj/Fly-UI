@@ -50,9 +50,11 @@
         </ul>
       </div>
     </div>
+    <fly-message></fly-message>
   </div>
 </template>
 <script>
+import flyMessage from "../../packages/fly_message/src/fly_message"
 export default {
   name: "fly-icon",
   data() {
@@ -81,6 +83,9 @@ export default {
         "iconfont fly-warning",
       ],
     };
+  },
+  components:{
+    flyMessage
   },
   methods: {
     copyContent() {
