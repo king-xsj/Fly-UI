@@ -1,15 +1,10 @@
 import Vue from 'vue';
 import FlyMessageVue from "./fly_message"
 
-//  const typeMap = {
-//     success: '',
-//     info: 'info',
-//     warning: 'warning',
-//     error: 'error',
-//   };
+  const typeMap = ['success','info','warning','error'];
   const defaults = {
     show:false,
-    content: "这是一条成功的提示 ",
+    content: "这是一条默认的提示 ",
     type: "success",
     duration:'2000',
     top: 30,
@@ -25,15 +20,39 @@ import FlyMessageVue from "./fly_message"
       })
       vm.show = false;
   }
+  // let instance;
+  // let instances = [];
+  // let hasMessage = false;
   const Message = (options={})=>{
+    
     if (Vue.prototype.$isServer) return;
-    options = Object.assign({}, defaults, options);
+    if(typeof options=== 'string'){
+      options = {
+        content:options
+      }
+    }else{
+      options = Object.assign({}, defaults, options);
+    }
+   
     let parents = document.body;
     let instance = new MessageConstructor({
         el:document.createElement('div'),
         data:options
     })
+    // if(hasMessage){
+    //   hasMessage= false
+    //   instances[0].close()
+    //   instances = []
+    // }
+    instance.$mount();
     parents.appendChild(instance.$el)
+    // let verticalOffset = options.top || 30;
+    // instances.forEach(element => {
+    //   verticalOffset += element.$el.offsetHeight+20
+    // });
+    // instance.show = true;
+    // instance.top = verticalOffset;
+    // instances.push(instance);
     Vue.nextTick(()=>{
         instance.show = true;
         setTimeout(()=>{
@@ -42,4 +61,16 @@ import FlyMessageVue from "./fly_message"
     })
     return instance;
   }
+  typeMap.forEach(type => {
+    Message[type] = options => {
+      if (typeof options === 'string') {
+        options = {
+          content: options
+        };
+      }
+      options.type = type;
+      return Message(options);
+    };
+  });
+  
   export default Message;

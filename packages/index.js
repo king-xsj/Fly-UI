@@ -1,5 +1,6 @@
 import '../public/theme/font/iconfont.css';
 import '../public/theme/base.scss';
+import utils from '../src/utils/index'
 import fly_btn from './fly_btn'
 import fly_anchor from './fly_anchor'
 import fly_anchor_link from './fly_anchor_link'
@@ -28,6 +29,7 @@ const install = function (Vue) {
 
   Vue.prototype.$Loading = fly_loading;
   Vue.prototype.$Message = fly_message;
+  Vue.prototype.$utils = utils;
 }
 
 // 判断是否是直接引入文件

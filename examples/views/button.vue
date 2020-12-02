@@ -5,8 +5,8 @@
 
     <fly-anchor>
       <fly-anchor-link href="button-Simple" title="普通按钮" />
-      <fly-anchor-link href="button-Black" title="暗色按钮" />
-      <fly-anchor-link href="button-Line" title="线性按钮" />
+      <fly-anchor-link href="button-Black" title="圆角按钮" />
+      <fly-anchor-link href="button-Line" title="禁用按钮" />
     </fly-anchor>
 
     <!-- 基础用法DEMO -->
@@ -18,7 +18,7 @@
     >
       <template v-slot:showPart>
         <div class="codepadding">
-          <fly-button @click="handleMessage()">Default</fly-button>
+          <fly-button @click="handleMessage">Default</fly-button>
           <fly-button type="primary">Primary</fly-button>
           <fly-button type="success">Success</fly-button>
           <fly-button type="danger">Danger</fly-button>
@@ -165,11 +165,18 @@ export default {
   },
 
   methods: {
+    test(){
+      console.log('这是一个函数');
+    },
     handleMessage(){
-      this.$Message({
-         content: `这是一条warning的提示`,
-         type: "warning"
-      })
+      this.$utils.throttle(this.test(),3000)
+      let obj = {a:1,b:2,c:{d:1,f:5}}
+      
+      console.log(this.$utils.deepClone(obj));
+      // this.$Message({
+      //    content: `这是一条warning的提示`,
+      //    type: "warning"
+      // })
     }
   },
 };
