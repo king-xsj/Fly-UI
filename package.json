@@ -1,6 +1,6 @@
 {
   "name": "fly-ui-win",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "private": false,
   "description": "this is instring Fly",
   "keyword": "UI、框架",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/king-xsj/Fly-UI"
+    "url": "git+https://github.com/king-xsj/Fly-UI.git"
   },
   "dependencies": {
     "clipboard": "^2.0.6",
@@ -50,5 +50,18 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/king-xsj/Fly-UI/issues"
+  },
+  "homepage": "https://github.com/king-xsj/Fly-UI#readme",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "keywords": [
+    "ui"
+  ],
+  "author": "xiesj",
+  "license": "ISC"
 }
