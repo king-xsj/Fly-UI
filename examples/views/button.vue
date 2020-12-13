@@ -175,7 +175,7 @@ export default {
       console.log(this.$utils.deepClone(obj));
       // this.$Message({
       //    content: `这是一条warning的提示`,
-      //    type: "warning"
+      //    type: "warning" 
       // })
     }
   },
