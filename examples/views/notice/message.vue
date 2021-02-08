@@ -44,25 +44,25 @@ export default {
           },
           methods: {
             handleSuccess(){
-              this.$Message({
+              this.$Flymessage({
                 type:'success',
                 content:'这是一条成功的提示'
               })
             },
             handleError(){
-              this.$Message({
+              this.$Flymessage({
                 type:'error',
                 content:'这是一条error的提示'
               })
             },
             handleWarning(){
-              this.$Message({
+              this.$Flymessage({
                 type:'warning',
                 content:'这是一条warning的提示'
               })
             },
             handleInfo(){
-              this.$Message({
+              this.$Flymessage({
                 type:'info',
                 content:'这是一条info的提示'
               })
@@ -104,25 +104,25 @@ export default {
 
   methods: {
     handleSuccess() {
-      this.$Message({
+      this.$Flymessage({
         type: "success",
         content: "这是一条成功的提示",
       });
     },
     handleError() {
-      this.$Message({
+      this.$Flymessage({
         type: "error",
         content: "这是一条error的提示",
       });
     },
     handleWarning() {
-      this.$Message({
+      this.$Flymessage({
         type: "warning",
         content: "这是一条warning的提示",
       });
     },
     handleInfo() {
-      this.$Message({
+      this.$Flymessage({
         type: "info",
         content: "这是一条info的提示",
       });

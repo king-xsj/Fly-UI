@@ -29,6 +29,6 @@ const Loading = function(options={}){
   Vue.nextTick(()=>{
     instance.showLoading()
   })
-  return instance;//const loading  = this.$loading() 返回的fly_loading组件
+  return instance;//const loading  = this.$Flyloading() 返回的fly_loading组件
 }
 export default Loading;

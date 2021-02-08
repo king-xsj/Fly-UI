@@ -27,8 +27,8 @@ const install = function (Vue) {
   // 遍历注册全局组件
   components.map(component => Vue.component(component.name, component))
 
-  Vue.prototype.$Loading = fly_loading;
-  Vue.prototype.$Message = fly_message;
+  Vue.prototype.$Flyloading = fly_loading;
+  Vue.prototype.$Flymessage = fly_message;
   Vue.prototype.$utils = utils;
 }
 
