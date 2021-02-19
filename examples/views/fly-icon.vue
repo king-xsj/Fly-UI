@@ -91,20 +91,20 @@ export default {
     copyContent() {
       // var _this = this;
       // var clipboard = new Clipboard(".btn"); //单页面引用
-      var clipboard = new this.Clipboard(".iconBtn"); //在main.js中引用
-      clipboard.on("success", () => {
-        // 释放内存
-        clipboard.destroy();
-      });
-      clipboard.on("error", () => {
-        // 不支持复制
-        // Message({
-        //   message: "该浏览器不支持自动复制",
-        //   type: "warning"
-        // });
-        // 释放内存
-        clipboard.destroy();
-      });
+      // var clipboard = new this.Clipboard(".iconBtn"); //在main.js中引用
+      // clipboard.on("success", () => {
+      //   // 释放内存
+      //   clipboard.destroy();
+      // });
+      // clipboard.on("error", () => {
+      //   // 不支持复制
+      //   // Message({
+      //   //   message: "该浏览器不支持自动复制",
+      //   //   type: "warning"
+      //   // });
+      //   // 释放内存
+      //   clipboard.destroy();
+      // });
     },
   },
 };

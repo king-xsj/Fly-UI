@@ -43,7 +43,7 @@ export default {
               methods:{
                 showLoading(){
                   var that = this;
-                  this.loading = this.$Loading()
+                  this.loading = this.$Flyloading()
                   setTimeout(()=>{
                     that.loading.close()
                   },3000)
@@ -65,7 +65,7 @@ export default {
     },
     showLoading(){
       var that = this;
-      this.loading = this.$Loading()
+      this.loading = this.$Flyloading()
       setTimeout(()=>{
         that.loading.close()
       },3000)
@@ -79,5 +79,5 @@ export default {
 }
 
 </script>
-<style lang='scss'>
+<style lang='scss' scoped>
 </style>
