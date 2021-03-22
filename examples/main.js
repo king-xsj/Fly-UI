@@ -7,7 +7,9 @@ import '../public/theme/base.scss';
 import 'highlight.js/styles/atom-one-dark.css'
 
 import '../util';
+import Clipboard from 'clipboard'; 
 
+Vue.prototype.Clipboard=Clipboard;
 
 import FlyUI from '../packages/index'
 

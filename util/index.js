@@ -28,10 +28,27 @@ Vue.prototype.fCode = function (code) {
 Vue.prototype.unique = function (array) {
   var res = [];
   for (var i = 0, len = array.length; i < len; i++) {
-      var current = array[i];
-      if (res.indexOf(current) === -1) {
-          res.push(current)
-      }
+    var current = array[i];
+    if (res.indexOf(current) === -1) {
+      res.push(current)
+    }
   }
   return res;
 }
+// Vue.prototype.deepClone = function (target) {
+//   //判断拷贝的要进行深拷贝的是数组还是对象，是数组的话进行数组拷贝，对象的话进行对象拷贝
+//   var objClone = Array.isArray(target) ? [] : {};
+//   //进行深拷贝的不能为空，并且是对象或者是 
+//   if (target && typeof target === "object") {
+//     for (var key in target) {
+//       if (target.hasOwnProperty(key)) {
+//         if (target[key] && typeof target[key] === "object") {
+//           objClone[key] = deepClone(target[key]);
+//         } else {
+//            objClone[key] = target[key]; 
+//         }
+//       }
+//     }
+//   } 
+//   return objClone;
+// }

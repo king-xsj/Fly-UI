@@ -25,9 +25,10 @@ const Loading = function(options={}){
     data:options
   })
   parent.appendChild(instance.$el);
+  console.log(instance.text);
   Vue.nextTick(()=>{
     instance.showLoading()
   })
-  return instance;//const loading  = this.$loading() 返回的fly_loading组件
+  return instance;//const loading  = this.$Flyloading() 返回的fly_loading组件
 }
 export default Loading;

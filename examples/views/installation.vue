@@ -27,12 +27,12 @@
     <!-- NPM安装 -->
     <h3 class="demo-table-title">NPM安装</h3>
     <p class="demo-introduction">推荐使用 npm 的方式安装，它能更好地和 webpack 打包工具配合使用。</p>
-    <!-- <p class="demo-introduction">
+    <p class="demo-introduction">
       <a
         href="https://www.npmjs.com/package/shn-vue-ui"
         target="_blank"
       >https://www.npmjs.com/package/shn-vue-ui</a>
-    </p>-->
+    </p>
     <div class="demo-code-block">npm i fly-ui-win</div>
 
     <!-- 快速上手 -->

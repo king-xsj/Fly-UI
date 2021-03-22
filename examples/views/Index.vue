@@ -55,21 +55,17 @@ export default {
               name: "Button 按钮",
               path: "#/views/button"
             },
-            // {
-            //   id: "002",
-            //   name: "Collect 收集",
-            //   path: "#/views/button-collect"
-            // },
-             {
-              id: "003",
-              name: "BaseComponent",
-              path: "#/views/basecomponent"
-            },
+           
             {
               id: "004",
               group: "Notice",
               name: "Loading 加载",
               path: "#/views/notice/loading"
+            },
+            {
+              id: "002",
+              name: "Message 消息提示",
+              path: "#/views/notice/message"
             },
             {
               id: "005",
@@ -99,15 +95,11 @@ export default {
       case "/views/icon":
         this.active = -2;
         break;
-      case "/views/img-card":
-        this.active = "201";
+      case "/views/message":
+        this.active = "002";
         break;
-      case "/views/collapse":
-        this.active = "300";
-        break;
-      case "/views/backtop":
-        this.active = "301";
-        break;
+     
+      
       case "/views/button":
         this.active = "001";
         break;
@@ -169,7 +161,7 @@ export default {
     .sidebar {
       position: fixed;
       margin-right: 40px;
-      width: 200px;
+      width: 260px;
       height: 80%;
       top: 135px;
       visibility: hidden;
@@ -226,7 +218,7 @@ export default {
       flex: 1;
       width: 100%;
       padding: 0 0px 0 10px;
-      margin-left: 240px;
+      margin-left: 300px;
     }
   }
 }
