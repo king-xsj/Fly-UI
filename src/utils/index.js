@@ -97,7 +97,7 @@ const UTILS = {
   },
   // 验证邮箱
   isEmail(email) {
-    var regx = /^([a-zA-Z0-9_\-])+@([a-zA-Z0-9_\-])+(\.[a-zA-Z0-9_\-])+$/;
+    var regx = /^([a-zA-Z]|[0-9])(\w|-)+@[a-zA-Z0-9]+\.([a-zA-Z]{2,4})$/;
     return regx.test(email);
   },
   // 验证身份证
