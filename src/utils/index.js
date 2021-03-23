@@ -73,7 +73,7 @@ const UTILS = {
         val = decodeURIComponent(val); // 解码
         val = /^\d+$/.test(val) ? parseFloat(val) : val; // 判断是否转为数字
   
-        if (paramsObj.hasOwnProperty(key)) { // 如果对象有 key，则添加一个值
+        if (Object.prototype.hasOwnProperty.call(paramsObj,key)) { // 如果对象有 key，则添加一个值
           paramsObj[key] = [].concat(paramsObj[key], val);
         } else { // 如果对象没有这个 key，创建 key 并设置值
           paramsObj[key] = val;
